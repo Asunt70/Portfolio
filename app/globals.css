@@ -7,6 +7,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --gray: #201f1f;
   }
 }
 
@@ -33,6 +34,10 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 @media (prefers-color-scheme: dark) {

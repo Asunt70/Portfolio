@@ -1,0 +1,165 @@
+.main {
+    display: flex;
+    position: absolute;
+    width: 95%;
+    height: 3rem;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--background);
+    z-index: 10;
+}
+
+.navMobile {
+    display: none;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav ul, .sidebar ul {
+    color: #bbbbbb;
+    transition: color 100ms ease-in-out;
+}
+.nav ul a:hover, .sidebar ul a:hover {
+    color: var(--foreground);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.btnCv, .btnHire, .showSidebar {
+    all: unset;
+    cursor: pointer;
+}
+
+.btnCv, .btnHire {
+    border-radius: 10px;
+}
+.main .btnCv, .btnHire {
+    padding: 0.5rem 1rem;
+}
+
+.btnCv, .btnHire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnCv {
+    border: 1px solid #999999;
+    transition: border-color 150ms ease-in-out;
+}
+
+.btnCv:hover {
+    border-color: var(--foreground);
+}
+
+.btnHire {
+    color: var(--background);
+    background-color:var(--foreground);
+    animation: colors 5s infinite, textColor 5s infinite;
+    animation-direction: alternate;
+    transition: all 100ms ease-in-out;
+}
+
+.btnHire:hover {
+    background-color: rgba(255, 255, 255, 0.781);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    right: -100%;
+    background-color: var(--background);
+    padding-top: 6rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.sidebar .buttons {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    height: 5.5rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar .buttons button {
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+}
+
+@keyframes colors {
+    0% {
+        background-color: #000B58;
+    }
+    25% {
+        background-color: #003161;
+    }
+    50% {
+        background-color: #006A67;
+    }
+    100% {
+        background-color: #FFF4B7;
+    }
+    
+}
+
+ @keyframes textColor {
+    0% {
+        color: #ffffff;
+    }
+    25% {
+        color: #ffffffcb;
+    }
+    50% {
+        color: #0c0c0c;
+    }
+    100% {
+        color: #000000;
+    }
+ }
+
+ @media only screen and (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    .navMobile {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    
+ }
