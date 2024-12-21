@@ -1,0 +1,72 @@
+.main {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.main form {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column; ;
+    background-color: #141111 ;
+    border-radius: 10px;
+    width: 70%;
+
+}
+
+.main input, .main textarea {
+    all: unset;
+}
+
+.main input, .main textarea {
+    margin-bottom: 1rem;
+}
+
+.main input:focus, .main textarea:focus {
+    outline: 1px solid var(--foreground);
+}
+
+.main label, .main textarea {
+    display: block;
+}
+
+.main label {
+    margin-bottom: 0.5rem;
+}
+
+.main input:not(:last-of-type) {
+    background-color: var(--gray);
+    border-radius: 10px;
+    height: 2.1rem;
+    padding: 0.5rem;
+}
+
+.main textarea {
+    background-color: var(--gray);
+    border-radius: 10px;
+    padding: 0.5rem;
+    height: 7rem;
+}
+
+.main form input:last-of-type {
+    margin-top: 1.5rem;
+    background-color: var(--background);
+    align-self: center;
+    border-radius: 10px;
+    text-align: center;
+    width: 6rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: outline 5s ease;
+}
+
+.main form input:last-of-type:hover {
+    outline: 1px solid var(--foreground);
+} 
+
+@media screen and (max-width:768px) {
+    .main form {
+        width:90%;
+    }
+}

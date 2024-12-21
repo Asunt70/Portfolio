@@ -1,6 +1,6 @@
 .main {
     display: flex;
-    position: absolute;
+    position: fixed;
     width: 95%;
     height: 3rem;
     top: 1rem;
@@ -121,6 +121,10 @@
     padding: 1rem;
 }
 
+
+.showSidebar:focus svg {
+    animation: rotate 1s ease-out;
+}
 @keyframes colors {
     0% {
         background-color: #000B58;
@@ -150,6 +154,16 @@
     100% {
         color: #000000;
     }
+ }
+
+ @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
  }
 
  @media only screen and (max-width: 768px) {
