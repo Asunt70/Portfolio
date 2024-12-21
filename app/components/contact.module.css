@@ -5,6 +5,36 @@
     width: 100%;
 }
 
+.shapes {
+    display: flex;
+    width: 100%;
+    position: relative;
+    z-index: -10;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap:0.3rem;
+    margin-bottom: 2rem;
+}
+
+.heading h3 {
+    font-size: 3rem;
+    background: linear-gradient(to top, var(--gray-2) ,var(--foreground)); /* Apply background gradient */
+  -webkit-background-clip: text; /* For WebKit browsers */
+  -webkit-text-fill-color: transparent; /* Make text transparent */
+  background-clip: text; 
+}
+
+.heading span {
+    font-size: 1.1rem;
+    font-family: var(--font-geist-mono);
+
+}
+
 .main form {
     display: flex;
     padding: 2rem;
