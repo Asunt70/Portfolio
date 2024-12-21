@@ -3,6 +3,10 @@ import styles from './contact.module.css'
 export default function Contact() {
     return(
         <div className={styles.main}>
+            <div className={styles.heading}>
+                <h3>Let's Contact</h3>
+                <span>To develop your dreams, goals.</span>
+            </div>
             <form action="submit">
             <label htmlFor="email">Name / Company</label>
             <input type="name" name="name" id="name" placeholder='Name or Company'/>
