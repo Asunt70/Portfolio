@@ -12,6 +12,16 @@
     z-index: -10;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
 .heading {
     display: flex;
     flex-direction: column;
@@ -96,7 +106,21 @@
 } 
 
 @media screen and (max-width:768px) {
+
     .main form {
         width:90%;
+    }
+
+    .shapes {
+        flex-direction: column;
+        gap: 6rem;
+    }
+
+    .shapes svg:last-child{
+        align-self: center;
+    }
+
+    .shapes svg {
+        width: 50%;
     }
 }
