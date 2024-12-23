@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Contact from './components/contact'
 import Footer from './components/footer'
 import About from './components/about'
+import Projects from './components/projects'
 export default function Home() {
   return (
     <>
@@ -65,6 +66,7 @@ fill="#000000" stroke="none">
       </div>
     </div>
     <About/>
+    <Projects/>
     <Contact/>
     <Footer/>
     </>
