@@ -1,6 +1,7 @@
 .main {
     display: flex;
     gap:10rem;
+    margin-top: 7rem;
     padding: 2rem;
     margin-top: 3rem;
     background-color: var(--gray-3);
@@ -12,7 +13,7 @@
     gap: 1rem;
 }
 
-.socials li {
+.socials li a {
     display: flex;
     align-items: center;
 }
@@ -23,8 +24,9 @@
 }
 
 @media screen and (max-width:768px) {
-    .main {
+    
+    .main{
+        gap: 0;
         justify-content: space-between;
-        gap:0;
     }
 }

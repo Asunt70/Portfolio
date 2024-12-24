@@ -1,5 +1,7 @@
 .main {
     padding: 2rem;
+    padding-top: 6rem;
+
     font-family: var(--font-geist-mono);
 }
 
@@ -9,6 +11,9 @@
     height: 100vh;
     margin-top: 3rem;
     gap: 2rem;
+    padding: 0.2rem;
+    border: 2px dashed var(--gray);
+    border-radius: 0.5rem;
 }
 
 .leftSide, .rightSide {
@@ -28,6 +33,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     width: 100%;
 }
@@ -36,12 +42,12 @@
     height: 50%;
 }
 
-.project1 .card {
+.project1 a {
     width: 70%;
     height: 70%;
 }
 
-.project2 .card, .project3 .card {
+.project2 a, .project3 a {
     width: 70%;
     height:80%;
 }
@@ -50,25 +56,73 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
     border-radius: 1.5rem;
     color: var(--background);
+    transition: background-size 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }  
 
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.outline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
 
 .project1 .card {
     background: url('/pBackground1.webp') no-repeat center center;
-    background-size: cover;
-
+    background-size: 100%;
 }
 
 .project2 .card {
     background: url('/pBackground2.webp') no-repeat center center;
-    background-size: cover;
+    background-size: 100%;
 
 }
 
 .project3 .card {
     background: url('/pBackground3.webp') no-repeat center center;
-    background-size: cover;
+    background-size: 100%;
+}
 
+.card:hover {
+    background-size: 108%;
+    opacity:0.8;
+}
+
+@media screen and (max-width: 1024px) {
+    .main {
+        padding: 1rem;
+    }
+    .container {
+        flex-direction: column;
+        height: 150vh;
+    }
+    .leftSide, .rightSide {
+        width: 100%;
+    }
+
+    .leftSide {
+        height: 33%;
+        margin-top: 2rem;
+    }
+
+    .rightSide{
+        height: 66%;
+    }
+    .project1, .project2, .project3 {
+        height: 100%;
+    }
+    .project1 a, .project2 a, .project3 a {
+        width: 80%;
+        height:80%;
+    }
 }

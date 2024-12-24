@@ -66,4 +66,18 @@
     justify-content: center;
     gap:1rem;
 }
+
+@media screen and (max-width:768px){
+    .home {
+        height: 80vh;
+    }
+
+    .card h1 {
+        font-size: 1.5rem;
+    }
+
+    .imageContainer {
+        width: 80%;
+    }
+}
 /* Home */
