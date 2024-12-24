@@ -13,7 +13,7 @@ export default function NavBar () {
         <nav className={styles.nav}>
         <ul>
             <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
+            {/* <li><a href="#about">ABOUT</a></li> */}
             <li><a href="#projects">PROJECTS</a></li>
             <li><a href="#contact">CONTACT</a></li>
         </ul>
@@ -42,7 +42,7 @@ export default function NavBar () {
     <div className={`${styles.sidebar} ${sidebar ? styles.active : ''}`}>
                 <ul>
             <li><a href="#home" onClick={closeSidebar}>HOME</a></li>
-            <li><a href="#about" onClick={closeSidebar}>ABOUT</a></li>
+            {/* <li><a href="#about" onClick={closeSidebar}>ABOUT</a></li> */}
             <li><a href="#projects" onClick={closeSidebar}>PROJECTS</a></li>
             <li><a href="#contact" onClick={closeSidebar}>CONTACT</a></li>
         </ul>

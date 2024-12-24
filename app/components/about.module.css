@@ -2,14 +2,8 @@
     display: flex;
 }
 
-.animation {
-    width: 50%;
-    position: relative; /* Ensure the container has a relative position */
-}
-
 .bio {
     width: 50%;
     font-family: var(--font-quicksand);
-    position: relative; /* Ensure the container has a relative position */
 }
 

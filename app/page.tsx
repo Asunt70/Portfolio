@@ -3,7 +3,7 @@ import NavBar from './components/navBar'
 import Image from 'next/image'
 import Contact from './components/contact'
 import Footer from './components/footer'
-import About from './components/about'
+// import About from './components/about'
 import Projects from './components/projects'
 import CopyButton from './components/copyButton'
 export default function Home() {
@@ -63,7 +63,7 @@ fill="#000000" stroke="none">
       </div>
       </div>
     </div>
-    <About/>
+    {/* <About/> */}
     <Projects/>
     <Contact/>
     <Footer/>
