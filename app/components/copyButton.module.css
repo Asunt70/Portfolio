@@ -1,22 +1,22 @@
 .copyButtonContainer {
-    position: relative;
-    display: inline-block; 
+  position: relative;
+  display: inline-block;
 }
 
 .btn {
-    all: unset;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.3rem;
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .copiedMessage {
-    position: absolute;
-    bottom: -30;
-    left: -30;
-    transform: translateX(-50%);
-    font-size: 14px;
-    white-space: nowrap; /* Prevents text from wrapping */
+  position: absolute;
+  bottom: -30;
+  left: -30;
+  transform: translateX(-50%);
+  font-size: 14px;
+  white-space: nowrap; /* Prevents text from wrapping */
 }
