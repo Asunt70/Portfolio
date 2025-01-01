@@ -23,7 +23,7 @@ export default function NavBar() {
             </li>
           </ul>
           <div className={styles.buttons}>
-            <a href="/SF.svg" download="sef">
+            <a href="/resume.pdf" download="resume">
               <button type="button" className={styles.btnCv}>
                 CV
                 <svg
@@ -96,7 +96,7 @@ export default function NavBar() {
           </li>
         </ul>
         <div className={styles.buttons}>
-          <a href="/SF.svg" download="sef" className={styles.btnCv}>
+          <a href="/resume.pdf" download="resume" className={styles.btnCv}>
             <button type="button">
               CV
               <svg
