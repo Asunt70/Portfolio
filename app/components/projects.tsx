@@ -6,7 +6,11 @@ export default function Projects() {
       <div className={styles.container}>
         <div className={styles.leftSide}>
           <div className={styles.project1}>
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://uptaeb-website.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className={styles.card}>
                 <div className={styles.title}>
                   <h3>UPTAEB Page</h3>
@@ -38,7 +42,11 @@ export default function Projects() {
         </div>
         <div className={styles.rightSide}>
           <div className={styles.project2}>
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="http://infinix-blog.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className={styles.card}>
                 <div className={styles.title}>
                   <h3>Infinix Blog</h3>
@@ -68,10 +76,14 @@ export default function Projects() {
             </div>
           </div>
           <div className={styles.project3}>
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="http://person-i-saw-app.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className={styles.card}>
                 <div className={styles.title}>
-                  <h3>Pinterest Clone</h3>
+                  <h3>Person I saw</h3>
                   <svg
                     width="20px"
                     height="20px"
@@ -94,7 +106,7 @@ export default function Projects() {
               </div>
             </a>
             <div className={styles.outline}>
-              <p>ye</p>
+              <p>Searching people platform</p>
             </div>
           </div>
         </div>

@@ -23,9 +23,13 @@
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 640px) {
   .main {
-    gap: 0;
+    gap: 1rem;
+    font-size: 0.6rem;
     justify-content: space-between;
+  }
+  .title {
+    font-size: 1rem;
   }
 }

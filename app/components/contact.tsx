@@ -5,7 +5,7 @@ export default function Contact() {
     <div className={styles.main} id="contact">
       <div className={styles.container}>
         <div className={styles.heading}>
-          <h3>Let's Contact</h3>
+          <h3>Let&apos;s Contact</h3>
           <span>Make your dreams become into reality.</span>
         </div>
         <form action="submit">
