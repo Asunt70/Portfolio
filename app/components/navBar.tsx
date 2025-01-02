@@ -13,14 +13,16 @@ export default function NavBar() {
           <ul>
             <li>
               <a href="#home">HOME</a>
+              {/* </li> */}
+              {/* <li><a href="#about">ABOUT</a></li> */}
+              {/* <li> */}
             </li>
-            {/* <li><a href="#about">ABOUT</a></li> */}
             <li>
               <a href="#projects">PROJECTS</a>
             </li>
-            <li>
-              <a href="#contact">CONTACT</a>
-            </li>
+            {/* <li> */}
+            {/* <a href="#contact">CONTACT</a> */}
+            {/* </li> */}
           </ul>
           <div className={styles.buttons}>
             <a href="/resume.pdf" download="resume">
@@ -89,11 +91,11 @@ export default function NavBar() {
               PROJECTS
             </a>
           </li>
-          <li>
-            <a href="#contact" onClick={closeSidebar}>
-              CONTACT
-            </a>
-          </li>
+          {/* <li> */}
+          {/* <a href="#contact" onClick={closeSidebar}> */}
+          {/* CONTACT */}
+          {/* </a> */}
+          {/* </li> */}
         </ul>
         <div className={styles.buttons}>
           <a href="/resume.pdf" download="resume" className={styles.btnCv}>
