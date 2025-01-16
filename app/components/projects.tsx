@@ -77,7 +77,7 @@ export default function Projects() {
           </div>
           <div className={styles.project3}>
             <a
-              href="http://person-i-saw-app.vercel.app"
+              href="http://person-i-saw.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
             >
